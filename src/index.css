@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-bilanis {
+  @apply bg-gradient-to-r from-bilanis-blue to-bilanis-green;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+}
+
+@layer base {
+   /* Supprime ou commente cette règle */
+  /* * {
+    @apply border;
+  } */
+
+  body {
+    @apply bg-bilanis-gray text-bilanis-foreground; /* Corrige cette ligne pour utiliser text-bilanis-foreground */
+  }
+}
